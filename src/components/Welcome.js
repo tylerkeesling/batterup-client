@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Login from './Login'
 
 class Welcome extends Component {
   render() {
@@ -11,7 +12,7 @@ class Welcome extends Component {
               alt='left-logo'
             />
           <div className='login-container'>
-            login placeholder
+            <Login />
           </div>
         </div>
         <div className='middle-container-bottom'></div>

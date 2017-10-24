@@ -19,40 +19,15 @@
 .middle-container {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 60vh;
   width: 100%;
-  background-image: url('../assets/images/sluggers-black-white-bg.jpg');
+  background-image: url('../assets/images/canva-photo-editor (1).png');
 }
 
 .left-logo {
   width: 25vw;
-  margin-left: 10vw;
-}
-
-.login-container {
-  flex: 1;
-}
-
-@media screen and (max-width: 600px) {
-  .left-logo {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 600px) and (min-width: 415px) {
-  .header-logo-right {
-    display: block;
-    margin-top: 10px;
-    margin-left: 25vw;
-  }
-}
-
-@media screen and (max-width: 415px) {
-  .header-logo-right {
-    display: block;
-    margin-top: 10px;
-    margin-left: 10px;
-  }
+  margin-right: 20px;
 }
 
 .middle-container-bottom {
@@ -74,4 +49,73 @@
 .footer p {
   color: white;
   margin-left: 3vw;;
+}
+
+.login-container {
+  background-color: #1d1d1d;
+  opacity: 0.88;
+  width: 400px;
+  border-radius: 10px;
+}
+
+#login-form {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.control-label {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.login-btn {
+  width: 75px;
+  border-radius: 5px;
+  background-color: #4DA1DE;
+}
+
+.login-btn:hover {
+  background-color: #82c3f2;
+}
+
+@media screen and (min-width: 600px) {
+  .middle-container {
+    background-color: #1d1d1d;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .left-logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 415px) {
+  .header-logo-right {
+    display: block;
+    margin-top: 10px;
+    margin-left: 25vw;
+  }
+
+  .middle-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .header-logo-right {
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .login-container {
+    width: 350px;
+  }
 }
