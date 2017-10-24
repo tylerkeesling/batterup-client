@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  width: 100%;
+  background-color: #1d1d1d;
+}
+
+.header-logo {
+  height: 60px;
+  margin: 10px 0 10px 10px;
+  border: 1px solid white;
+}
+
+.middle-container {
+  display: flex;
+  align-items: center;
+  height: 60vh;
+  width: 100%;
+  background-image: url('../assets/images/sluggers-black-white-bg.jpg')
+}
+
+.left-logo {
+  /*flex: 1;*/
+  height: 50%;
+}
+
+.login-container {
+  flex: 1;
+}
