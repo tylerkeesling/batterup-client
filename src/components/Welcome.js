@@ -14,6 +14,7 @@ class Welcome extends Component {
             login placeholder
           </div>
         </div>
+        <div className='middle-container-bottom'></div>
       </div>
     )
   }

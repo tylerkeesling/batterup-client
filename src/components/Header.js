@@ -1,17 +1,20 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-class Header extends Component {
-  render() {
-    return (
-      <div className='header'>
-        <img
-          className='header-logo'
-          src={ require('../assets/images/sluggers-s-white@0.5x.png') }
-          alt='logo'
-        />
-      </div>
-    )
-  }
+const Header = () => {
+  return (
+    <div className='header'>
+      <img
+        className='header-logo'
+        src={ require('../assets/images/sluggers-s-white@0.5x.png') }
+        alt='logo'
+      />
+    <img
+      className='header-logo-right'
+      src= { require('../assets/images/sluggers-log-white@0.5x.png') }
+      alt='logo'
+    />
+    </div>
+  )
 }
 
 export default Header

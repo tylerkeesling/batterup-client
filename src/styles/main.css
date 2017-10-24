@@ -1,5 +1,6 @@
 .header {
   display: flex;
+  align-items: center;
   width: 100%;
   background-color: #1d1d1d;
 }
@@ -10,19 +11,67 @@
   border: 1px solid white;
 }
 
+.header-logo-right {
+  height: 60px;
+  display: none;
+}
+
 .middle-container {
   display: flex;
   align-items: center;
   height: 60vh;
   width: 100%;
-  background-image: url('../assets/images/sluggers-black-white-bg.jpg')
+  background-image: url('../assets/images/sluggers-black-white-bg.jpg');
 }
 
 .left-logo {
-  /*flex: 1;*/
-  height: 50%;
+  width: 25vw;
+  margin-left: 10vw;
 }
 
 .login-container {
   flex: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .left-logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 415px) {
+  .header-logo-right {
+    display: block;
+    margin-top: 10px;
+    margin-left: 25vw;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .header-logo-right {
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+}
+
+.middle-container-bottom {
+  height: 10px;
+  width: 100%;
+  background-color: #1d1d1d;
+}
+
+.footer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+  background-color: #1d1d1d;
+}
+
+.footer p {
+  color: white;
+  margin-left: 3vw;;
 }
