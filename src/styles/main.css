@@ -1,3 +1,8 @@
+body {
+  height: 100%;
+  margin: 0;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -13,7 +18,6 @@
 
 .header-logo-right {
   height: 60px;
-  display: none;
 }
 
 .middle-container {
@@ -37,10 +41,9 @@
 }
 
 .footer {
-  position: absolute;
   display: flex;
   align-items: center;
-  bottom: 0;
+  margin-top: -70px;
   height: 70px;
   width: 100%;
   background-color: #1d1d1d;

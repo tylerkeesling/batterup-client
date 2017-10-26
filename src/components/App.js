@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom'
 import Header from './Header'
 import Footer from './Footer'
 import Welcome from './Welcome'
+import Dashboard from './Dashboard'
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
         <Header />
         <Switch>
           <Route exact path='/' component={ Welcome }></Route>
+          <Route path='/dashboard' component={ Dashboard }></Route>
         </Switch>
         <Footer />
       </div>

@@ -8,7 +8,8 @@ class Login extends Component {
     this.state = {
       email: '',
       password: '',
-      validEmail: null
+      validEmail: null,
+      errorMsg: false
     }
   }
 
@@ -50,8 +51,22 @@ class Login extends Component {
       body: JSON.stringify(bodyEP)
     })
       .then(res => res.json())
-      .then(token =>
-      console.log(token))
+      .then(data =>
+        this.validateToken(data)
+    )
+    .catch(err => {
+      console.log('something happened');
+    })
+  }
+
+  validateToken(data) {
+    if (data.token) {
+      localStorage.setItem('token', data.token)
+      window.location.href= '/dashboard'
+    } else {
+      localStorage.removeItem('token')
+      console.log(data.error)
+    }
   }
 
   render() {
