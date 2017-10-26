@@ -3,11 +3,12 @@ import { connect } from 'react-redux'
 import '../styles/dashboard.css'
 import NavBar from './NavBar'
 import PlayerRosterImg from './PlayerRosterImg'
-import { fetchTeam } from '../actions'
+import { fetchTeam, fetchTeamStats } from '../actions'
 
 class Dashboard extends Component {
   componentDidMount() {
     this.props.fetchTeam()
+    this.props.fetchTeamStats()
   }
   render() {
     return (
@@ -54,4 +55,4 @@ function mapStateToProps(state) {
   return state
 }
 
-export default connect(mapStateToProps, { fetchTeam })(Dashboard)
+export default connect(mapStateToProps, { fetchTeam, fetchTeamStats })(Dashboard)
