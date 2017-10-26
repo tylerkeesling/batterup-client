@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import {  } from '../actions'
-import { Link } from 'react-router-dom'
+import { fetchTeamStats } from '../actions'
+import GameStatsItem from './GameStatsItem'
 
 import NavBar from './NavBar'
 
 class GameStats extends Component {
   componentDidMount() {
-
+    this.props.fetchTeamStats()
   }
 
   render() {
@@ -15,8 +15,16 @@ class GameStats extends Component {
       <div className='content'>
         <NavBar />
         <div className='container'>
-          <Link to='/dashboard'>back</Link>
-
+          {
+            this.props.teamStats.map(player => {
+              return (
+                <GameStatsItem
+                  key={ player.id }
+                  player={ player }
+                />
+              )
+            })
+          }
         </div>
       </div>
     )
@@ -27,4 +35,4 @@ function mapStateToProps(state) {
   return state
 }
 
-export default connect(mapStateToProps, {  })(GameStats)
+export default connect(mapStateToProps, { fetchTeamStats })(GameStats)

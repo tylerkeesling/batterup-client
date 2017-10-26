@@ -10,6 +10,7 @@ class NavBar extends Component {
           <Nav>
             <LinkContainer to='/dashboard'><NavItem>Dashboard</NavItem></LinkContainer>
             <LinkContainer to='/gamestats'><NavItem>Game Stats</NavItem></LinkContainer>
+            <LinkContainer to='/gameon'><NavItem>Game On!</NavItem></LinkContainer>
           </Nav>
           <Nav pullRight>
             <NavItem eventKey={1} href="#">
