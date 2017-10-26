@@ -40,8 +40,8 @@ class Login extends Component {
   }
 
   retrieveToken(bodyEP) {
-    // let url = 'https://agile-wave-60105.herokuapp.com/api/v1/auth/login'
-    let url = 'http://localhost:8080/api/v1/auth/login'
+    let url = 'https://agile-wave-60105.herokuapp.com/api/v1/auth/login'
+    // let url = 'http://localhost:8080/api/v1/auth/login'
     fetch(url, {
       headers: {
         'Accept': 'application/json',

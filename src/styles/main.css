@@ -1,12 +1,15 @@
 body {
   height: 100%;
   margin: 0;
+  padding: 0;
 }
 
 .header {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 100%;
+  height: 80px;
   background-color: #1d1d1d;
 }
 
@@ -14,10 +17,14 @@ body {
   height: 60px;
   margin: 10px 0 10px 10px;
   border: 1px solid white;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .header-logo-right {
-  height: 60px;
+  height: 80px;
+  margin-top: 10px;
 }
 
 .middle-container {
@@ -41,6 +48,7 @@ body {
 }
 
 .footer {
+  position: absolute;
   display: flex;
   align-items: center;
   margin-top: -70px;
@@ -98,11 +106,11 @@ body {
 }
 
 @media screen and (max-width: 600px) and (min-width: 415px) {
-  .header-logo-right {
+  /*.header-logo-right {
     display: block;
     margin-top: 10px;
     margin-left: 25vw;
-  }
+  }*/
 
   .middle-container {
     flex-direction: column;
@@ -112,11 +120,11 @@ body {
 }
 
 @media screen and (max-width: 415px) {
-  .header-logo-right {
+  /*.header-logo-right {
     display: block;
     margin-top: 10px;
     margin-left: 10px;
-  }
+  }*/
 
   .login-container {
     width: 350px;
