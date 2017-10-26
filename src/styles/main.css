@@ -4,6 +4,10 @@ body {
   padding: 0;
 }
 
+.content {
+  min-height: calc(100vh - 70px);
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -73,6 +77,7 @@ body {
   border: 1px solid black;
   border-radius: 10px;
   padding: 20px;
+  height: 230px;
 }
 
 .control-label {

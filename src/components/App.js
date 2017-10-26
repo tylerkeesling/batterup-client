@@ -5,6 +5,7 @@ import Header from './Header'
 import Footer from './Footer'
 import Welcome from './Welcome'
 import Dashboard from './Dashboard'
+import GameStats from './GameStats'
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
         <Switch>
           <Route exact path='/' component={ Welcome }></Route>
           <Route path='/dashboard' component={ Dashboard }></Route>
+          <Route path='/gamestats' component={ GameStats }></Route>
         </Switch>
         <Footer />
       </div>

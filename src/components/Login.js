@@ -71,34 +71,37 @@ class Login extends Component {
 
   render() {
     return (
-      <div className='login-container'>
-        <div className='login-background'></div>
-        <Form id='login-form'>
-          <FormGroup validationState={ this.state.validEmail }>
-            <ControlLabel>Email:</ControlLabel>
+        <div className='login-container'>
+          <div className='login-background'>
+          </div>
+          <Form id='login-form'>
+            <FormGroup validationState={ this.state.validEmail }>
+              <ControlLabel>Email:</ControlLabel>
+              {' '}
+              <FormControl
+                type='email'
+                onChange={ event => this.watchEmailForm(event) }
+                >
+              </FormControl>
+            </FormGroup>
             {' '}
-            <FormControl
-              type='email'
-              onChange={ event => this.watchEmailForm(event) }
-            ></FormControl>
-          </FormGroup>
-          {' '}
-          <FormGroup>
-            <ControlLabel>Password</ControlLabel>
-            {' '}
-            <FormControl
-              type='password'
-              onChange={ event => this.setState({ password: event.target.value }) }
-            ></FormControl>
-          </FormGroup>
-          <Button
-            className='login-btn'
-            onClick={ () => this.submitForm() }
-          >
-            Login
-          </Button>
-        </Form>
-      </div>
+            <FormGroup>
+              <ControlLabel>Password</ControlLabel>
+              {' '}
+              <FormControl
+                type='password'
+                onChange={ event => this.setState({ password: event.target.value }) }
+                >
+              </FormControl>
+            </FormGroup>
+            <Button
+              className='login-btn'
+              onClick={ () => this.submitForm() }
+              >
+              Login
+            </Button>
+          </Form>
+        </div>
     )
   }
 }

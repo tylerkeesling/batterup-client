@@ -11,7 +11,7 @@ class Dashboard extends Component {
   }
   render() {
     return (
-      <div  >
+      <div className='content'>
         <NavBar />
         <div className='container dashboard-container'>
           <div className='dash-info'>
