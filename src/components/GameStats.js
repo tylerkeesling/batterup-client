@@ -35,55 +35,94 @@ class GameStats extends Component {
             striped
             hover
             exportCSV>
-            <TableHeaderColumn dataField='id' width='40px' dataAlign='center' isKey dataSort>id</TableHeaderColumn>
+            <TableHeaderColumn dataField='id'
+              width='40px'
+              dataAlign='center'
+              isKey
+              dataSort
+            >id</TableHeaderColumn>
             <TableHeaderColumn
-              tdStyle={ { fontWeight: 'bold' } }
+              tdStyle={ { fontSize: '14px' } }
               thStyle={ { fontSize: '18px' } }
               dataField='name'
-              width='105px'
+              width='120px'
               dataAlign='center'
               dataSort
             >Name</TableHeaderColumn>
             <TableHeaderColumn
               dataField='gp'
+              tdStyle={ { fontSize: '16px' } }
               thStyle={ { fontSize: '18px' } }
               dataAlign='center'
               dataSort
             >GP</TableHeaderColumn>
             <TableHeaderColumn
               dataField='ab'
+              tdStyle={ { fontSize: '16px' } }
               thStyle={ { fontSize: '18px' } }
               dataAlign='center'
               dataSort
             >AB</TableHeaderColumn>
             <TableHeaderColumn
               dataField='hits'
+              tdStyle={ { fontSize: '16px' } }
               thStyle={ { fontSize: '18px' } }
               dataAlign='center'
               dataSort
             >H</TableHeaderColumn>
             <TableHeaderColumn
               dataField='single'
+              tdStyle={ { fontSize: '16px' } }
               thStyle={ { fontSize: '18px' } }
               dataAlign='center'
               dataSort
             >1B</TableHeaderColumn>
             <TableHeaderColumn
               dataField='double'
+              tdStyle={ { fontSize: '16px' } }
               thStyle={ { fontSize: '18px' } }
               dataAlign='center'
               dataSort
             >2B</TableHeaderColumn>
             <TableHeaderColumn
               dataField='triple'
-              thStyle={ { fontSize: '18px' } } dataAlign='center' dataSort>3B</TableHeaderColumn>
+              tdStyle={ { fontSize: '16px' } }
+              thStyle={ { fontSize: '18px' } }
+              dataAlign='center'
+              dataSort
+            >3B</TableHeaderColumn>
             <TableHeaderColumn
               dataField='homerun'
-              thStyle={ { fontSize: '18px' } } dataAlign='center' dataSort>HR</TableHeaderColumn>
-            <TableHeaderColumn dataField='walk' thStyle={ { fontSize: '18px' } } dataAlign='center' dataSort>BB</TableHeaderColumn>
-            <TableHeaderColumn dataField='avg' thStyle={ { fontSize: '18px' } } dataAlign='center' dataSort>AVG</TableHeaderColumn>
-            <TableHeaderColumn dataField='obp' thStyle={ { fontSize: '18px' } } dataAlign='center' dataSort>OBP</TableHeaderColumn>
-            <TableHeaderColumn dataField='slg' thStyle={ { fontSize: '18px' } } dataAlign='center' dataSort>SLG</TableHeaderColumn>
+              tdStyle={ { fontSize: '16px' } }
+              thStyle={ { fontSize: '18px' } }
+              dataAlign='center'
+              dataSort
+            >HR</TableHeaderColumn>
+            <TableHeaderColumn
+              dataField='walk'
+              tdStyle={ { fontSize: '16px' } }
+              thStyle={ { fontSize: '18px' } }
+              dataAlign='center'
+              dataSort
+            >BB</TableHeaderColumn>
+            <TableHeaderColumn
+              dataField='avg'
+              tdStyle={ { fontSize: '16px' } }
+              thStyle={ { fontSize: '18px' } }
+              dataAlign='center' dataSort
+            >AVG</TableHeaderColumn>
+            <TableHeaderColumn
+              dataField='obp'
+              tdStyle={ { fontSize: '16px' } }
+              thStyle={ { fontSize: '18px' } }
+              dataAlign='center' dataSort
+            >OBP</TableHeaderColumn>
+            <TableHeaderColumn
+              dataField='slg'
+              tdStyle={ { fontSize: '16px' } }
+              thStyle={ { fontSize: '18px' } }
+              dataAlign='center' dataSort
+            >SLG</TableHeaderColumn>
           </BootstrapTable>
         </div>
       </div>
