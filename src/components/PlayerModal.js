@@ -5,7 +5,6 @@ import { Doughnut, Bar } from 'react-chartjs-2';
 
 const PlayerModal = ({ teamStats, showModal, toggleModal, id }) => {
   let player = findPlayerById(teamStats, id)[0] || {}
-  let doughnut = doughnutData(player)
   let options ={
           scales: {
               yAxes: [{
