@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { fetchTeamStats } from '../actions'
 import ReactTable from 'react-table'
+import NavBar from './NavBar'
+import ChartModal from './ChartModal'
 import _ from "lodash";
 import 'react-table/react-table.css'
 
-import NavBar from './NavBar'
-import PlayerModal from './PlayerModal'
 
 class GameStats extends Component {
   constructor(props) {
@@ -119,14 +119,11 @@ class GameStats extends Component {
         <NavBar />
 
         {
-          this.state.selectedPlayer !== null ?
-            <PlayerModal
+            <ChartModal
               id={ this.state.selectedPlayerId }
               toggleModal={ this.toggleModal.bind(this) }
               showModal={ this.state.showModal }
             />
-          :
-            <div></div>
         }
 
         <ReactTable

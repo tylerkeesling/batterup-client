@@ -1,14 +1,18 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import '../styles/dashboard.css'
+import { fetchTeam, fetchTeamStats } from '../actions'
 import NavBar from './NavBar'
 import PlayerRosterImg from './PlayerRosterImg'
-import { fetchTeam, fetchTeamStats } from '../actions'
+import '../styles/dashboard.css'
 
 class Dashboard extends Component {
-  componentDidMount() {
+  constructor(props) {
+    super(props)
     this.props.fetchTeam()
-    this.props.fetchTeamStats()
+
+    this.state = {
+      showModal: false
+    }
   }
   render() {
     return (
@@ -27,6 +31,12 @@ class Dashboard extends Component {
             </div>
             <div className='dash-info-right'>
               <h3><strong>Game Info</strong></h3>
+                <h4><strong>Next Game:</strong></h4>
+                  <p>Legends of the Hittin Temple (4-4) vs. Big Swingers (6-2)</p>
+                  <p>Tuesday, November 7th @ 7:00PM</p>
+                <h4><strong>Last Game:</strong></h4>
+                  <p>Legends of the Hittin Temple (3-4) vs. Pinch Hitters (5-3)</p>
+                  <p><strong>Result:</strong> 15-13 A win for the Legends!</p>
 
             </div>
           </div>

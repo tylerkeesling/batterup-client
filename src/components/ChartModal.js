@@ -3,16 +3,29 @@ import { connect } from 'react-redux'
 import { Modal, Button, Col } from 'react-bootstrap'
 import { Doughnut, Bar } from 'react-chartjs-2';
 
-const PlayerModal = ({ teamStats, showModal, toggleModal, id }) => {
+const ChartModal = ({ teamStats, showModal, toggleModal, id }) => {
   let player = findPlayerById(teamStats, id)[0] || {}
-  let options ={
+  let barOptions ={
           scales: {
               yAxes: [{
                   ticks: {
                       beginAtZero:true
                   }
               }]
-          }}
+          },
+          title: {
+            display: true,
+            text: 'Averages',
+            fontSize: 20
+          }
+        }
+  let doughnutOptions = {
+    title: {
+      display: true,
+      text: 'Spread of Hit Types',
+      fontSize: 20
+    }
+  }
   return (
     <Modal
       show={ showModal }
@@ -30,12 +43,13 @@ const PlayerModal = ({ teamStats, showModal, toggleModal, id }) => {
             <Doughnut
               data={ doughnutData(player) }
               height={250}
+              options={ doughnutOptions }
             />
           </Col>
           <Col sm={12} md={6}>
             <Bar
               data={ barData(teamStats, player) }
-              options={ options }
+              options={ barOptions }
               height={250}
             />
           </Col>
@@ -54,7 +68,7 @@ function mapStateToProps(state) {
   }
 }
 
-export default connect(mapStateToProps, null)(PlayerModal)
+export default connect(mapStateToProps, null)(ChartModal)
 
 function findPlayerById(teamStats, id) {
   return teamStats.filter((player) => {
@@ -89,7 +103,6 @@ function barData(teamStats, player) { // need
   let teamAVG = (sumStat(teamStats, 'avg')/teamStats.length).toFixed(3)
   let teamOBP = (sumStat(teamStats, 'obp')/teamStats.length).toFixed(3)
   let teamSLG = (sumStat(teamStats, 'slg')/teamStats.length).toFixed(3)
-  console.log(teamAVG);
   return {
     datasets: [{
       label: 'Player',
@@ -98,7 +111,7 @@ function barData(teamStats, player) { // need
       borderWidth: 1,
       hoverBackgroundColor: 'rgba(255,99,132,0.4)',
       hoverBorderColor: 'rgba(255,99,132,1)',
-      data: [player.avg, player.obp, player.slg]
+      data: [player.avg, player.slg, player.obp]
     },{
       label: 'Team',
       backgroundColor: 'rgba(99, 129, 255, 0.2)',
@@ -106,9 +119,9 @@ function barData(teamStats, player) { // need
       borderWidth: 1,
       hoverBackgroundColor: 'rgba(99, 129, 255, 0.2)',
       hoverBorderColor: 'rgba(99, 129, 255, 1)',
-      data: [teamAVG, teamOBP, teamSLG]
+      data: [teamAVG, teamSLG, teamOBP]
     }],
-    labels: ['Batting Average', 'On Base %', 'Slugging %'],
+    labels: ['Batting Average', 'Slugging %', 'On Base %'],
     ticks: {
       min: 0
     }

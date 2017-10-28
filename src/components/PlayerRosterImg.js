@@ -15,6 +15,7 @@ class PlayerRosterImg extends Component {
         className='player-item'
         onMouseEnter={ () => this.setState({ hovered: true }) }
         onMouseLeave={ () => this.setState({ hovered: false }) }
+        onClick={ () => console.log(this.props.player) }
       >
         <img
           className={ this.state.hovered ? 'player-img darken-img' : 'player-img'}

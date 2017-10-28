@@ -141,5 +141,5 @@ body {
 }
 
 .chart-content {
-  height: 325px;
+  min-height: 350px;
 }
