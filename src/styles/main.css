@@ -139,3 +139,7 @@ body {
 .stats-table {
   padding: 0 20px 0 20px;
 }
+
+.chart-content {
+  height: 325px;
+}

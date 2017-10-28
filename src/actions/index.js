@@ -43,7 +43,6 @@ export function fetchTeamStats() {
   return function(dispatch) {
     return fetchTeamStatsJson()
       .then(json => {
-        console.log('func', reformatTeamStats(json));
         return reformatTeamStats(json)
       })
       .then(json => dispatch(getTeamStats(json)))
