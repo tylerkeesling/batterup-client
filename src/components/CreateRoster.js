@@ -33,7 +33,7 @@ class CreateRoster extends Component {
 
   startGame() {
     let player_ids = this.state.gameRoster.map(player => player.id)
-    // this.props.createGameRoster({players: player_ids})
+    this.props.createGameRoster({players: player_ids})
     this.setState({ fireRedirect: true })
   }
 
