@@ -1,5 +1,6 @@
 export const GET_TEAM = 'GET_TEAM'
 export const GET_TEAM_STATS = 'GET_TEAM_STATS'
+export const POST_GAME_ROSTER = 'POST_GAME_ROSTER'
 
 const baseURL = 'http://localhost:8080/api/v1'
 // const baseURL = 'https://agile-wave-60105.herokuapp.com/api/v1'
@@ -50,7 +51,29 @@ export function fetchTeamStats() {
   }
 }
 
+function postGameRoster(gameRoster) {
+  console.log('action', gameRoster);
+  return {
+    type: POST_GAME_ROSTER,
+    gameRoster
+  }
+}
 
+function postGameRosterJson(gameRoster) {
+  console.log('gameRoster', gameRoster);
+  return fetch(`${baseURL}/game`, {
+    method: 'POST',
+    headers: { 'Content-type': 'application/json' },
+    body: JSON.stringify(gameRoster)
+  }).then(response => response.json())
+}
+
+export function createGameRoster(new_game_roster_object) {
+  return function(dispatch) {
+    return postGameRosterJson(new_game_roster_object)
+      .then(new_roster => dispatch(postGameRoster(new_roster)))
+  }
+}
 
 function reformatTeamStats(json) {
   return json.map(player => {

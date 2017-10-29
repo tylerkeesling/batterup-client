@@ -7,6 +7,7 @@ import Welcome from './Welcome'
 import Dashboard from './Dashboard'
 import GameStats from './GameStats'
 import CreateRoster from './CreateRoster'
+import InGame from './InGame'
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
           <Route path='/dashboard' component={ Dashboard }></Route>
           <Route path='/gamestats' component={ GameStats }></Route>
           <Route path='/createroster' component={ CreateRoster }></Route>
+          <Route path='/ingame' component={ InGame }></Route>
         </Switch>
         <Footer />
       </div>
