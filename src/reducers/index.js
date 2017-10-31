@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux'
-import { GET_TEAM, GET_TEAM_STATS, POST_GAME_ROSTER } from '../actions'
+import { GET_TEAM, GET_TEAM_STATS, POST_GAME_ROSTER, PUT_PLAYER_GAME } from '../actions'
 
 function myTeam(state = [], action) {
   switch (action.type) {
@@ -23,6 +23,8 @@ function gameRoster(state = [], action) {
   switch(action.type) {
     case POST_GAME_ROSTER:
       return action.gameRoster
+    case PUT_PLAYER_GAME:
+      return [...state, ...action.playerGameStats].slice(1)
     default:
       return state
   }

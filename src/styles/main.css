@@ -164,3 +164,107 @@ body {
   padding-right: 10px !important;
   align-items: center !important!;
 }
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.batter-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.batter {
+  font-size: 20px;
+}
+
+.next-better {
+  font-size: 12px;
+}
+
+.batter-name {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.next-batter-name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.hit-selection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #535353;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.hit-selection-text {
+  z-index: 2;
+  flex: 1;
+  font-size: 20px;
+  margin: 20px 0 -2px 0;
+  padding: 5px 35px 10px 35px;
+  border: 2px solid #535353;
+  border-bottom: 2px solid white;
+  border-radius: 5px 5px 0 0;
+}
+
+.hit-button {
+  width: 100px;
+  margin: 5px !important;
+  border-radius: 5px !important;
+  background-color: #4da1de !important;
+}
+
+.hit-button.active {
+  background-color: #d46767 !important;
+}
+
+.homerun-btn {
+  margin-left: 60px !important;
+}
+
+.rbi-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.rbi-count-box {
+  display: flex;
+}
+
+.rbi-btn {
+  width: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 5px 0 5px 0;
+  border-radius: 5px;
+}
+
+.rbi-text {
+  font-size: 35px;
+  margin: 0 10px 0 10px;
+}
+
+.rbi-selection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #535353;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  margin-bottom:20px;
+}
+
+.next-batter-btn {
+  font-size: 20px;
+  border-radius: 5px !important;
+  width: 50vw !important;
+}
