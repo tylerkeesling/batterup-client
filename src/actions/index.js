@@ -5,9 +5,10 @@ export const POST_GAME_ROSTER = 'POST_GAME_ROSTER'
 export const PUT_PLAYER_GAME = 'PUT_PLAYER_GAME'
 
 
-const baseURL = 'http://localhost:8080/api/v1'
-const socket = io('http://localhost:8080/')
-// const baseURL = 'https://agile-wave-60105.herokuapp.com/api/v1'
+// const baseURL = 'http://localhost:8080/api/v1'
+// const socket = io('http://localhost:8080/')
+const baseURL = 'https://agile-wave-60105.herokuapp.com/api/v1'
+const socket = io('https://agile-wave-60105.herokuapp.com/')
 const teamId = 1
 
 function getTeam(team) {
@@ -54,11 +55,6 @@ export function fetchTeamStats() {
       .catch(err => console.log('catch', err))
   }
 }
-
-socket.on('submitPlayerData', data => {
-  fetchTeamStats()
-  console.log('socket.on running');
-})
 
 function postGameRoster(gameRoster) {
   return {

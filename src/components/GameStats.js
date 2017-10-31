@@ -8,7 +8,7 @@ import _ from "lodash";
 import 'react-table/react-table.css'
 import io from 'socket.io-client'
 
-const socket = io('http://localhost:8080/')
+const socket = io('https://agile-wave-60105.herokuapp.com/')
 
 class GameStats extends Component {
   constructor(props) {
