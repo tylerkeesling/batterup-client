@@ -268,3 +268,44 @@ body {
   border-radius: 5px !important;
   width: 50vw !important;
 }
+
+.modal-box {
+    color: white;
+    position: fixed;
+    opacity: .9;
+    top: 0%;
+    left: 0%;
+    width: 350px;
+    line-height: 200px;
+    height: 460px;
+    margin-left: 12px;
+    margin-top: 125px;
+    background-color: #1f1f1f !important;
+    text-align: center;
+    z-index: 10;
+    outline: 9999px solid rgba(0,0,0,0.5);
+}
+
+.modal-box h4 {
+  margin-top: 150px;
+  margin-bottom: 0px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.modal-box p {
+  margin-top: 25px;
+  line-height: 0;
+  margin-bottom: 0px;
+  font-size: 20px;
+}
+
+.modal-box .btn {
+  border-radius: 5px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.modal-box .btn-danger {
+  margin-top: -250px;
+}
