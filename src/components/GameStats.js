@@ -6,12 +6,17 @@ import NavBar from './NavBar'
 import ChartModal from './ChartModal'
 import _ from "lodash";
 import 'react-table/react-table.css'
+import io from 'socket.io-client'
 
+const socket = io('http://localhost:8080/')
 
 class GameStats extends Component {
   constructor(props) {
     super(props)
     this.props.fetchTeamStats()
+    socket.on('submitPlayerData', data => {
+      this.props.fetchTeamStats()
+    })
 
     this.state = {
       showModal: false,
@@ -127,7 +132,7 @@ class GameStats extends Component {
         }
 
         <ReactTable
-          className='-striped -highlight container'
+          className='-striped -highlight stats-table'
           data={this.props.teamStats}
           columns={columns}
           defaultPageSize={ 11 }

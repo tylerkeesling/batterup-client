@@ -1,6 +1,18 @@
 /*editor error animate*/
 /*@import "~toastr/build/toastr.min.css";*/
 
+@media screen and (min-width: 990px) {
+  .stats-table {
+    margin: 0 6% 0 6%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .stats-table {
+    margin: 0 15% 0 15%;
+  }
+}
+
 .react-bs-table-container .react-bs-table-search-form {
   margin-bottom: 0;
 }

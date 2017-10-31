@@ -309,3 +309,7 @@ body {
 .modal-box .btn-danger {
   margin-top: -250px;
 }
+
+.modal-footer {
+     border-top: none;
+}
