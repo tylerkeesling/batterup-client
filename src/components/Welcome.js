@@ -16,7 +16,16 @@ class Welcome extends Component {
               <Login />
             </div>
           </div>
-          <div className='middle-container-bottom'>
+          <div className='middle-container-bottom'></div>
+          <div className='app-quotes'>
+            <div className='user-testimony'>
+              <p className='actual-quote'>"Sluggers is a real homerun."</p>
+              <p className='my-name'>- Rob Olson, Denver CO</p>
+            </div>
+            <div className='the-app-quote'>
+              <p className='actual-quote'>"The app that tracks your stats!"</p>
+              <p className='my-name'>- Nina Keesling, Kennett Square PA</p>
+            </div>
           </div>
         </div>
       </div>
