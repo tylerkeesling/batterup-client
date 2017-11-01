@@ -18,9 +18,9 @@ body {
 }
 
 .header-logo {
-  height: 60px;
-  margin: 10px 0 10px 10px;
-  border: 1px solid white;
+  height: 65px;
+  margin: 7.5px 0 10px 10px;
+  /*border: 1px solid white;*/
   position: absolute;
   top: 0;
   left: 0;
@@ -28,7 +28,6 @@ body {
 
 .header-logo-right {
   height: 80px;
-  margin-top: 10px;
 }
 
 .middle-container {
@@ -41,8 +40,8 @@ body {
 }
 
 .left-logo {
-  width: 25vw;
-  margin-right: 20px;
+  /*width: 25vw;*/
+  /*margin-right: 20px;*/
 }
 
 .middle-container-bottom {

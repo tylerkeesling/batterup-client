@@ -9,7 +9,7 @@ class Welcome extends Component {
           <div className='middle-container'>
             <img
               className='left-logo'
-              src={ require('../assets/images/sluggers-log-white@0.5x.png') }
+              src={ require('../assets/images/batter-up-white@0.5x.png') }
               alt='left-logo'
               />
             <div className='login-container'>
