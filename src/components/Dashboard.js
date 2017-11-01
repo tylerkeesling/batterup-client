@@ -27,15 +27,15 @@ class Dashboard extends Component {
                 src={ require('../assets/images/Randy_Savage_1986.jpg') }
                 />
               <h3><strong>Message from the Coach:</strong></h3>
-              <p><em>Hey, Brother!</em> <br></br>
-                <em>I hope you really knock it out of the park on the presentation, brother!</em>
+              <p><strong><em>Hey, Brother!</em> <br></br>
+                <em>I hope you really knock it out of the park on the presentation!</em></strong>
               </p>
               <p>
                 Tis the night before Playoffs when all through the season, <br></br>
-              We scored many runs and drank beers for no good reason; <br></br>
-            Our opponents were tough, hitting home-runs with care, <br></br>
-          In hopes that a championship title would soon be theirs; <br></br>
-        But The Legends were nestled all snug in 7th seed, <br></br>
+                We scored many runs and drank beers for no good reason; <br></br>
+                Our opponents were tough, hitting home-runs with care, <br></br>
+                In hopes that a championship title would soon be theirs; <br></br>
+                But The Legends were nestled all snug in 7th seed, <br></br>
                 While visions of 1st place trophies danced in their dreams.
               </p>
               <p>- Coach</p>
