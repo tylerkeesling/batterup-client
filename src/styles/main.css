@@ -343,3 +343,18 @@ body {
     font-size: 30px;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .actual-quote {
+    font-size: 16px;
+    margin: 0;
+  }
+  .my-name {
+    font-size: 12px;
+  }
+
+  .app-quotes {
+    height: 15vh;
+    margin-top: 10px;
+  }
+}
