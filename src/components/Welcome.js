@@ -19,7 +19,7 @@ class Welcome extends Component {
           <div className='middle-container-bottom'></div>
           <div className='app-quotes'>
             <div className='user-testimony'>
-              <p className='actual-quote'>"Sluggers is a real homerun."</p>
+              <p className='actual-quote'>"Batter Up is a real homerun."</p>
               <p className='my-name'>- Rob Olson, Denver CO</p>
             </div>
             <div className='the-app-quote'>
