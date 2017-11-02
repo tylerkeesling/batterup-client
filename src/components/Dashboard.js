@@ -27,8 +27,8 @@ class Dashboard extends Component {
                 src={ require('../assets/images/Randy_Savage_1986.jpg') }
                 />
               <h3><strong>Message from the Coach:</strong></h3>
-              <p><strong><em>Hey, Brother!</em> <br></br>
-                <em>I hope you really knock it out of the park on the presentation!</em></strong>
+              <p><strong><em>Brother!</em> <br></br>
+                <em>I hope you really knock it out of the park tonight!</em></strong>
               </p>
               <p>
                 Tis the night before Playoffs when all through the season, <br></br>
