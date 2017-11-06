@@ -1,80 +1,30 @@
-# Project Title
+# Batter Up: The app that tracks your stats
 
-One Paragraph of project description goes here
+Batter Up is an web application for desktop and mobile that I designed and built for my softball team. Batter Up is a central team hub and enables the team/coach to set a roster and track hitting statistics over the course of a season.
+
+This was my capstone project for the g55 Galvanize cohort in Denver - Platte.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
+If you want to checkout the deployed site, you can find it [HERE!](batterup.surge.sh)
+    For the time being, you can log in with my email: tyler.keesling@gmail.com and the password: "password"
+    Some features have been disabled for privacy purposes.
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
+* [React](https://reactjs.org/) - The web framework used
+* [Redux](http://redux.js.org/) - State management tool used
+* [Bootstrap](https://react-bootstrap.github.io/) - Used for some component styling
+* [Chart.js](http://www.chartjs.org/) - Used for Data visualization
+* [Socket.io](https://socket.io/) - Realtime application framework used
+* [Node.js](https://nodejs.org/en/) - The backend JavaScript runtime server used
+* [Express](https://expressjs.com/) - Web application framework used for Node.js
+* [Knex.js](http://knexjs.org/) - JavaScript SQL query builder for PostgreSQL databases
+* [PostgreSQL](https://www.postgresql.org/) - Object relational DBMS used
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Tyler Keesling** - [tylerkeesling](https://github.com/tylerkeesling)
 
 ## License
 
@@ -82,6 +32,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+* Inspiration for this project came from my friend Rob's incessant need to keep track of our softball team's hitting statistics to drive better performance
