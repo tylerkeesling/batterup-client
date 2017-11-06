@@ -7,8 +7,10 @@ This was my capstone project for the g55 Galvanize cohort in Denver - Platte.
 ## Getting Started
 
 If you want to checkout the deployed site, you can find it [HERE!](batterup.surge.sh)
-    For the time being, you can log in with my email: tyler.keesling@gmail.com and the password: "password"
-    Some features have been disabled for privacy purposes.
+
+For the time being, you can log in with my email: tyler.keesling@gmail.com and the password: "password"
+
+Some features have been disabled for privacy purposes.
 
 ## Built With
 
@@ -32,4 +34,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Inspiration for this project came from my friend Rob's incessant need to keep track of our softball team's hitting statistics to drive better performance
+* Inspiration for this project came from my friend Rob's incessant need to keep track of our softball team's hitting statistics to drive better performance, so, thank you Rob
