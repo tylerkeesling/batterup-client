@@ -10,7 +10,7 @@ If you want to checkout the deployed site, you can find it [HERE!](batterup.surg
 
 For the time being, you can log in with my email: tyler.keesling@gmail.com and the password: "password"
 
-Some features have been disabled for privacy purposes.
+Please feel free to play around with the data! Some features have been disabled for privacy purposes. 
 
 ## Built With
 
