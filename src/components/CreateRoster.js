@@ -41,56 +41,62 @@ class CreateRoster extends Component {
     return (
       <div className='content'>
         <NavBar />
-        <Button
-          bsStyle="success"
-          bsSize="large"
-          block
-          onClick={ () => this.startGame() }>
-          Select Team & Start Game!
-        </Button>
-        <Col xs={5} xsOffset={1}>
-          <h4 style={ {textAlign:'center'} }>
-            Your Team:
-          </h4>
-          <ListGroup>
-            {
-              this.state.availableRoster.map(player => {
-                return (
-                  <ListGroupItem
-                    key={ player.id }
-                    bsStyle='danger'
-                    bsClass='roster-item list-group-item'
-                    onClick={ ()=>this.addToGameRoster(player) }>
-                    { player.name }
-                  </ListGroupItem>
-                )
-              })
-            }
-          </ListGroup>
-        </Col>
-        <Col xs={5}>
-          <h4 style={ {textAlign:'center'} }>
-            Game Roster:
-          </h4>
-          <ListGroup>
-            {
-              this.state.gameRoster.map(player => {
-                return (
-                  <ListGroupItem
-                    key={ player.id }
-                    bsStyle='success'
-                    bsClass='roster-item list-group-item'
-                    onClick={ () => this.removeFromGameRoster(player) }>
-                    { player.name }
-                  </ListGroupItem>
-                )
-              })
-            }
-          </ListGroup>
-        </Col>
-        {
-          this.state.fireRedirect && (<Redirect to='/ingame' />)
-        }
+        <div className='create-roster-flexbox'>
+        <div className='create-roster-container'>
+          <Button
+            bsStyle="success"
+            bsSize="large"
+            block
+            onClick={ () => this.startGame() }>
+            Select Team & Start Game!
+          </Button>
+          <Col xs={5} xsOffset={1}>
+            <h4 style={ {textAlign:'center'} }>
+              Your Team:
+            </h4>
+            <ListGroup>
+              {
+                this.state.availableRoster.map(player => {
+                  return (
+                    <ListGroupItem
+                      key={ player.id }
+                      bsStyle='danger'
+                      bsClass='roster-item list-group-item'
+                      onClick={ ()=>this.addToGameRoster(player) }>
+                      { player.name }
+                    </ListGroupItem>
+                  )
+                })
+              }
+            </ListGroup>
+          </Col>
+          <Col xs={5}>
+            <h4 style={ {textAlign:'center'} }>
+              Game Roster:
+            </h4>
+            <ListGroup>
+              {
+                this.state.gameRoster.map(player => {
+                  return (
+                    <ListGroupItem
+                      key={ player.id }
+                      bsStyle='success'
+                      bsClass='roster-item list-group-item'
+                      onClick={ () => this.removeFromGameRoster(player) }>
+                      { player.name }
+                    </ListGroupItem>
+                  )
+                })
+              }
+            </ListGroup>
+          </Col>
+          {
+            this.state.fireRedirect && (
+              <Redirect to='/ingame' />
+            )
+          }
+        </div>
+        </div>
       </div>
     )
   }

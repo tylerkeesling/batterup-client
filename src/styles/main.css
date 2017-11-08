@@ -357,3 +357,23 @@ body {
     margin-top: 10px;
   }
 }
+
+.create-roster-container {
+  max-width: 415px;
+  flex: 1;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 415px) {
+  .navbar {
+    margin-bottom: 21px;
+  }
+}
+
+.create-roster-flexbox {
+  display: flex;
+  justify-content: center;
+}
