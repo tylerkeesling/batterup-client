@@ -371,4 +371,5 @@ body {
 .create-roster-flexbox {
   display: flex;
   justify-content: center;
+  padding-bottom: 60px;
 }
