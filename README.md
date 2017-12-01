@@ -10,7 +10,7 @@ If you want to checkout the deployed site, you can find it [HERE!](batterup.surg
 
 For the time being, you can log in with my email: tyler.keesling@gmail.com and the password: "password"
 
-Please feel free to play around with the data! Some features have been disabled for privacy purposes. 
+Please feel free to play around with the data! Some features have been disabled for privacy purposes.
 
 ## Built With
 
@@ -23,6 +23,18 @@ Please feel free to play around with the data! Some features have been disabled 
 * [Express](https://expressjs.com/) - Web application framework used for Node.js
 * [Knex.js](http://knexjs.org/) - JavaScript SQL query builder for PostgreSQL databases
 * [PostgreSQL](https://www.postgresql.org/) - Object relational DBMS used
+
+## How To Use
+
+* Log in to your teams dashboard
+![login](src/assets/demo/login.gif)
+* Checkout your teams hitting statistics
+
+* Compare yourself to the team's averages and visualize your hit spread
+
+* Go into game mode and create the roster/batting order for today's game
+
+* Go through the batting order and select the hit type, an out, and add any RBI's and watch your stats update- live!
 
 ## Authors
 
