@@ -264,34 +264,36 @@ body {
 }
 
 .modal-box {
-    color: white;
-    position: fixed;
-    opacity: .9;
-    top: 0%;
-    left: 0%;
-    width: 350px;
-    line-height: 200px;
-    height: 460px;
-    margin-left: 12px;
-    margin-top: 125px;
-    background-color: #1f1f1f !important;
-    text-align: center;
-    z-index: 10;
-    outline: 9999px solid rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  position: fixed;
+  opacity: .9;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  margin: 125px 0 0 0;
+  background-color: #1f1f1f !important;
+  text-align: center;
+  z-index: 10;
+  outline: 9999px solid rgba(0,0,0,0.5);
 }
 
 .modal-box h4 {
-  margin-top: 150px;
+  margin-top: 120px;
   margin-bottom: 0px;
   font-size: 25px;
   font-weight: 500;
+  font-weight: bold;
 }
 
 .modal-box p {
-  margin-top: 25px;
-  line-height: 0;
-  margin-bottom: 0px;
+  margin-top: 15px;
+  margin-bottom: 25px;
   font-size: 20px;
+  font-weight: bold
 }
 
 .modal-box .btn {
@@ -301,7 +303,7 @@ body {
 }
 
 .modal-box .btn-danger {
-  margin-top: -250px;
+  margin-top: 25px;
 }
 
 .modal-footer {
