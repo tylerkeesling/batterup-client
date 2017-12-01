@@ -29,12 +29,13 @@ Please feel free to play around with the data! Some features have been disabled 
 * Log in to your teams dashboard
 ![login](src/assets/demo/login.gif)
 * Checkout your teams hitting statistics
-
+![checkstats](src/assets/demo/checkstats.gif)
 * Compare yourself to the team's averages and visualize your hit spread
-
+![visual](src/assets/demo/visualize.gif)
 * Go into game mode and create the roster/batting order for today's game
-
+![ingame](src/assets/demo/ingame.gif)
 * Go through the batting order and select the hit type, an out, and add any RBI's and watch your stats update- live!
+![play](src/assets/demo/play.gif)
 
 ## Authors
 
